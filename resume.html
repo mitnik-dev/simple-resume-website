@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Mitnik - Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header-items">
+            <div class="logo">
+                <img src="computer-logo.png" alt="Logo" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="cover-letter.html">Cover Letter</a></li>
+                    <li><a href="career-goals.html">Career Goals</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="name">
+            <span class="first-name">Charlie</span>
+            <span class="last-name">Mitnik<span class="cursor">|</span></span>
+        </section>
+        <section class="terminal">
+            <section class="terminal-header">
+                <div class="tab">
+                    <div class="tab-content"> 
+                        <h3>Terminal</h3>
+                    </div>
+                    <img src="exit-thin.png" alt="exit" >
+            
+                </div>
+                <div class="icons">
+                    <img src="min.png" alt="Minimize" >
+                    <img src="max.png" alt="Maximize" >
+                    <img src="exit.png" alt="Exit" >
+                </div>
+            </section>
+            <section class="terminal-content">
+                
+                <section class="terminal-text">
+                    <p><strong>mitnik@web-page:/home/charlie/resume$</strong> cat resume.md</p>
+
+                    <article class="resume">
+                        <p># Charlie Mitnik</p>
+                        
+                        <br>
+            
+                        
+                            <p>## Career Objective</p>
+                            <p>As a curious and determined student working towards a bachelor’s in computer science, I aim to develop my programming skills in a professional setting and to cultivate valuable industry connections through networking. Thus, I am seeking an internship which gives me both the opportunity to work alongside an experienced leadership team and one that facilitates opportunities to collaborate with peers.</p>
+            
+                        <br>
+            
+                        <p>## Education</p>
+                        <br>
+                        <p>### University of Central Florida | Orlando, FL</p>
+                        <p>**Computer Science** | 12/2025</p>
+                        <p>**GPA:** 3.57</p>
+                        <br>
+                        <p>**Relevant Coursework**:</p>
+                        <p>- **Computer Science I:** Utilizing data structures to improve the efficiency of data manipulation and algorithms.</p>
+                        <p>- **Principles in Software Development:** Object-Oriented Programming, structuring code using encapsulation, inheritance, and polymorphism, and implementing classes and objects to improve reusability and maintainability.</p>
+                        <p>- **Topics in Cybersecurity:** Understanding the fundamentals of information security and studying encryption techniques.</p>
+                        <br>
+                        <p>### Seminole State College of Florida | Sanford, FL</p>
+                        <p>**General Studies | 08/2022**</p>
+                        <br>
+                        <p>**Relevant Coursework:**</p>
+                        <p>- Microsoft Computer Applications</p>
+            
+                        <br>
+            
+                        <caption>## Skills</caption>
+        
+                        <table>
+                            <tr>
+                                <th>| Programming Languages</th>
+                                <th>| Tools</th>
+                                <th>| Operating Systems</th>
+                                <th>| Frameworks</th>
+                                <th>|</th>
+                            </tr>
+                            <tr>
+                    
+                            </tr>
+                            <tr>
+                                <td>| C</td>
+                                <td>| Git</td>
+                                <td>| Windows</td>
+                                <td>| Spring Boot</td>
+                                <td>|</td>
+                            </tr>
+                            <tr>
+                                <td>| Java</td>
+                                <td>| Docker</td>
+                                <td>| Linux</td>
+                                <td>| React</td>
+                                <td>|</td>
+                            </tr>
+                            <tr>
+                                <td>| Python</td>
+                                <td>| VS Code</td>
+                                <td>| MacOS</td>
+                                <td>| Angular</td>
+                                <td>|</td>
+                            </tr>
+                        </table>
+                        
+                        <br>
+            
+                        
+                        <p>## Experience</p>
+            
+                        <br>
+                        
+                        <p>### Winter Pines Golf Course | Winter Park, FL</p>
+                        <p>**Bartender** | 12/2022 - present</p>
+                        <ul>
+                            <li>Lead by example and demonstrated courtesy in order to uphold a professional and respectful work environment.</li>
+                        </ul>
+                        <br>
+                        <p>### The Pinery | Orlando, FL</p>
+                        <p>**Server** | 08/2021 - 12/2022</p>
+                        <ul>
+                            <li>Maintained high standard of service by following the expertise of managers.</li>
+                        </ul>
+                        <br>
+                        <p>## Chuys TexMex | Winter Park, FL</p>
+                        <p>**Server** | 04/2021 - 10/2022</p>
+                        <ul>
+                            <li>Collaborated with a diverse group of coworkers to achieve common goals.</li>
+                        </ul>
+                        
+                        <br>
+                
+                        <p>## Contact Information</p>
+                        <p>- Name: Charlie Mitnik</p>
+                        <p>- Phone: (407) 868-1353</p>
+                        <p>- Email: CharlieMitnik@gmail.com</p>
+                        <p>- Location: Orlando, FL</p>
+                    </article>
+                </section>    
+            </section>
+        </section>  
+        <hr>
+    </main>
+    
+    <footer>
+        <div class="copyright">
+            <h4>&copy <em>Charlie Mitnik</em></h4>
+        </div>
+        <div class="date">
+            <h5 id="date-text"></h5>
+        </div>
+    </footer>
+
+    <script>
+        const dateText = document.getElementById('date-text');
+        const date = new Date().toLocaleDateString();
+        dateText.innerHTML = `Date: ${date}`;
+
+        console.log(date);
+    </script>
+</body>
+</html>

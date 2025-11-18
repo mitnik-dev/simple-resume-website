@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Mitnik - Career Goals</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <section class="header-items">
+            <div class="logo">
+                <img src="computer-logo.png" alt="Logo" >
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="cover-letter.html">Cover Letter</a></li>
+                    <li><a href="career-goals.html">Career Goals</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <section class="name">
+            <span class="first-name">Charlie</span>
+            <span class="last-name">Mitnik<span class="cursor">|</span></span>
+        </section>
+        <section class="terminal">
+            <section class="terminal-header">
+                <div class="tab">
+                    <div class="tab-content"> 
+                        <h3>Terminal</h3>
+                    </div>
+                    <img src="exit-thin.png" alt="exit" >
+            
+                </div>
+                <div class="icons">
+                    <img src="min.png" alt="Minimize" >
+                    <img src="max.png" alt="Maximize" >
+                    <img src="exit.png" alt="Exit" >
+                </div>
+            </section>
+            <section class="terminal-content">
+                <section class="terminal-text">
+                    <p><strong>mitnik@web-page:/home/charlie/career-goals$</strong> cat career-goals.txt</p>
+                    <br>
+                    <p>Career Goals</p>
+                    <br>
+                    <p>I'm Charlie Mitnik, a software engineering student with a strong background in programming, problem-solving, and system design. I’m passionate about using technology to create innovative solutions.</p>
+
+                    <p>I plan to pursue a Master's in Data Science to deepen my knowledge in data analytics, machine learning, and AI. I believe this will allow me to work with large data sets and make impactful, data-driven decisions.</p>
+                    
+                    <p>My goal is to build a career in data science, applying my software engineering skills to solve complex data challenges and help organizations make smarter decisions using machine learning, statistics, and data visualization.</p>
+                    
+                    <br>
+                    <p><strong>mitnik@web-page:/home/charlie/contact-form$</strong> python contact_me.py</p>
+                    
+                    <form action="https://wp.zybooks.com/form-viewer.php" onsubmit="showVideo(event)" method="POST">
+                        <fieldset>
+                            <label for="first-name">## First Name:</label>
+                            <input type="text">
+        
+                            <label for="last-name">## Last Name:</label>
+                            <input type="text">
+                            
+                            <label for="company-name">## Company Name:</label>
+                            <input type="text">
+                            
+                            <label for="email">## Email Address:</label>
+                            <input type="email">
+                            
+                            <label for="phone">## Phone Number:</label>
+                            <input type="phone">
+                            
+                            <label for="message">## Message:</label>
+                            <textarea rows="1" cols="50"></textarea>
+                            
+                            <p>## Best Contact Time:</p>
+                            <div class="radio-buttons" >
+                                <input type="radio">
+                                <label for="am">a.m.</label><br>
+                                <input type="radio">
+                                <label for="pm">p.m.</label><br>
+                                <input type="radio">
+                                <label for="anytime">anytime</label>
+                            </div>
+                            <label for="contact-method">## Preferred Contact Method:</label>
+                            <select id="contact-method" name="contact-method">
+                                <option value="phone">Phone</option>
+                                <option value="email">Email</option>
+                                <option value="text">Text</option>
+                            </select>
+                            
+                            <input type="submit" value="**Select here to submit:** ">
+                        </fieldset>
+                    </form>
+                    <p id="asciiquarium-command"><strong>mitnik@web-page:/home/charlie$</strong> asciiquarium</p>  
+                </section>
+            
+                <audio id="bubbles">
+                    <source src="bubbles.mp3" type="audio/mp3">
+                </audio>
+
+                <video id="asciiquarium">
+                    <source src="asciiquarium.mp4" type="video/mp4">
+                </video>
+            
+                <script>
+                    function showVideo(event) {
+                        event.preventDefault();
+            
+                        document.getElementById('asciiquarium').style.display = 'block';
+        
+                        var video = document.getElementById('asciiquarium');
+                        video.play();
+
+                        var audio = document.getElementById('bubbles');
+                        audio.play();
+
+                        var command = document.getElementById('asciiquarium-command').style.display = 'inline';
+
+                    }
+                </script>
+
+            </section>
+        </section>  
+        <hr>
+    </main>
+    
+    <footer>
+        <div class="copyright">
+            <h4>&copy <em>Charlie Mitnik</em></h4>
+        </div>
+        <div class="date">
+            <h5 id="date-text"></h5>
+        </div>
+    </footer>
+
+    <script>
+        const dateText = document.getElementById('date-text');
+        const date = new Date().toLocaleDateString();
+        dateText.innerHTML = `Date: ${date}`;
+    </script>
+</body>
+</html>
